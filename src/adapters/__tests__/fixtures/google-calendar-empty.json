@@ -1,0 +1,8 @@
+{
+  "kind": "calendar#events",
+  "etag": "\"empty-etag\"",
+  "summary": "Empty Test Calendar",
+  "updated": "2024-01-01T00:00:00.000Z",
+  "timeZone": "UTC",
+  "items": []
+}

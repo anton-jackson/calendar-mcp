@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<D:multistatus xmlns:D="DAV:" xmlns:C="urn:ietf:params:xml:ns:caldav">
+  <D:response>
+    <D:href>/calendars/user/calendar/event1.ics</D:href>
+    <D:propstat>
+      <D:prop>
+        <D:getetag>"12345-67890"</D:getetag>
+        <C:calendar-data>BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Example Corp//CalDAV Client//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:event-1@example.com
+DTSTART:20240115T100000Z
+DTEND:20240115T110000Z
+SUMMARY:Team Meeting
+DESCRIPTION:Weekly team sync meeting
+LOCATION:Conference Room A
+ORGANIZER;CN=John Doe:mailto:john@example.com
+ATTENDEE;CN=Jane Smith:mailto:jane@example.com
+CATEGORIES:MEETING,WORK
+URL:https://example.com/meetings/team-sync
+CREATED:20240101T000000Z
+LAST-MODIFIED:20240101T000000Z
+END:VEVENT
+END:VCALENDAR</C:calendar-data>
+      </D:prop>
+      <D:status>HTTP/1.1 200 OK</D:status>
+    </D:propstat>
+  </D:response>
+  <D:response>
+    <D:href>/calendars/user/calendar/event2.ics</D:href>
+    <D:propstat>
+      <D:prop>
+        <D:getetag>"23456-78901"</D:getetag>
+        <C:calendar-data>BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Example Corp//CalDAV Client//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:event-2@example.com
+DTSTART:20240116T140000Z
+DTEND:20240116T150000Z
+SUMMARY:Project Review
+DESCRIPTION:Quarterly project review session
+LOCATION:Meeting Room B
+ORGANIZER;CN=Alice Johnson:mailto:alice@example.com
+CATEGORIES:REVIEW,PROJECT
+RRULE:FREQ=MONTHLY;INTERVAL=3;COUNT=4
+CREATED:20240101T000000Z
+LAST-MODIFIED:20240101T000000Z
+END:VEVENT
+END:VCALENDAR</C:calendar-data>
+      </D:prop>
+      <D:status>HTTP/1.1 200 OK</D:status>
+    </D:propstat>
+  </D:response>
+</D:multistatus>

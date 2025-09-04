@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Malformed Calendar//Test//EN
+
+BEGIN:VEVENT
+UID:malformed-event@example.com
+DTSTART:INVALID_DATE_FORMAT
+SUMMARY:Malformed Event
+DESCRIPTION:This event has malformed data
+END:VEVENT
+
+BEGIN:VEVENT
+UID:missing-required-fields@example.com
+SUMMARY:Event Missing Required Fields
+DESCRIPTION:This event is missing DTSTART
+END:VEVENT
+
+BEGIN:VEVENT
+UID:incomplete-event@example.com
+DTSTART:20240115T100000Z
+SUMMARY:Incomplete Event
+DESCRIPTION:This event is missing END:VEVENT
+
+END:VCALENDAR

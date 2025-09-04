@@ -1,0 +1,141 @@
+{
+  "kind": "calendar#events",
+  "etag": "\"test-etag\"",
+  "summary": "Test Calendar",
+  "updated": "2024-01-01T00:00:00.000Z",
+  "timeZone": "America/New_York",
+  "items": [
+    {
+      "kind": "calendar#event",
+      "etag": "\"event-etag-1\"",
+      "id": "test-event-1",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=test-event-1",
+      "created": "2024-01-01T00:00:00.000Z",
+      "updated": "2024-01-01T00:00:00.000Z",
+      "summary": "Team Meeting",
+      "description": "Weekly team sync meeting to discuss project progress and upcoming tasks.",
+      "location": "Conference Room A, 123 Main St, Anytown, USA",
+      "creator": {
+        "email": "creator@example.com",
+        "displayName": "Event Creator"
+      },
+      "organizer": {
+        "email": "organizer@example.com",
+        "displayName": "Meeting Organizer"
+      },
+      "start": {
+        "dateTime": "2024-01-15T10:00:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2024-01-15T11:00:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "eventType": "default",
+      "attendees": [
+        {
+          "email": "attendee1@example.com",
+          "displayName": "John Doe",
+          "responseStatus": "accepted"
+        },
+        {
+          "email": "attendee2@example.com",
+          "displayName": "Jane Smith",
+          "responseStatus": "tentative"
+        }
+      ]
+    },
+    {
+      "kind": "calendar#event",
+      "etag": "\"event-etag-2\"",
+      "id": "test-event-2",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=test-event-2",
+      "created": "2024-01-01T00:00:00.000Z",
+      "updated": "2024-01-01T00:00:00.000Z",
+      "summary": "All Day Conference",
+      "description": "Annual technology conference with keynote speakers and workshops.",
+      "location": "Convention Center, Downtown",
+      "creator": {
+        "email": "events@conference.com",
+        "displayName": "Conference Organizer"
+      },
+      "organizer": {
+        "email": "events@conference.com",
+        "displayName": "Conference Organizer"
+      },
+      "start": {
+        "date": "2024-01-20"
+      },
+      "end": {
+        "date": "2024-01-21"
+      },
+      "eventType": "default"
+    },
+    {
+      "kind": "calendar#event",
+      "etag": "\"event-etag-3\"",
+      "id": "test-event-3",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=test-event-3",
+      "created": "2024-01-01T00:00:00.000Z",
+      "updated": "2024-01-01T00:00:00.000Z",
+      "summary": "Weekly Standup",
+      "description": "Recurring weekly standup meeting for the development team.",
+      "location": "Virtual - Zoom Meeting",
+      "creator": {
+        "email": "scrum@company.com",
+        "displayName": "Scrum Master"
+      },
+      "organizer": {
+        "email": "scrum@company.com",
+        "displayName": "Scrum Master"
+      },
+      "start": {
+        "dateTime": "2024-01-22T09:00:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2024-01-22T09:30:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "eventType": "default",
+      "recurrence": [
+        "RRULE:FREQ=WEEKLY;BYDAY=MO"
+      ]
+    },
+    {
+      "kind": "calendar#event",
+      "etag": "\"event-etag-4\"",
+      "id": "test-event-4",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=test-event-4",
+      "created": "2024-01-01T00:00:00.000Z",
+      "updated": "2024-01-01T00:00:00.000Z",
+      "summary": "Monthly Review",
+      "description": "Monthly business review meeting with stakeholders.",
+      "location": "Boardroom, 5th Floor",
+      "creator": {
+        "email": "exec@company.com",
+        "displayName": "Executive Team"
+      },
+      "organizer": {
+        "email": "exec@company.com",
+        "displayName": "Executive Team"
+      },
+      "start": {
+        "dateTime": "2024-01-30T14:00:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2024-01-30T16:00:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "eventType": "default",
+      "recurrence": [
+        "RRULE:FREQ=MONTHLY;INTERVAL=1;BYMONTHDAY=30"
+      ]
+    }
+  ]
+}
